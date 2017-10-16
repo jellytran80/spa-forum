@@ -1,7 +1,7 @@
 <template>
 	<div id="root">
 		<h1>
-			SPA-FORUM Vue2 & Laravel
+			SPA-FORUM <small> với Laravel + Vue.js</small>
 		</h1>
 		<router-view></router-view>
 	</div>
