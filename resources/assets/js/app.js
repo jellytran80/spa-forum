@@ -7,6 +7,20 @@
 
 require('./bootstrap');
 
+import Vue from 'vue'
+import App from './components/App'
+import router from './routes/index.js'
+
+
+var vm = new Vue({
+	el: '#app',
+	router,
+	render: h => h(App)
+})
+
+
+
+
 // window.Vue = require('vue');
 
 /**
@@ -20,15 +34,3 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
-
-import Vue from 'vue'
-import App from './components/App'
-import router from './routes/index.js'
-
-
-
-var vm = new Vue({
-	router,
-	el: '#app',
-	render: h => h(App)
-})
