@@ -14,7 +14,7 @@ export default new Router({
 		{ path: '/', name: 'Home', component: HomeView },
 		{ path: '/category', name: 'Category', component: CategoryView },
 		{ path: '/topic', name: 'Topic', component: TopicView },
-		{ path: '*', component: NotFound}
+		{ path: '*', name: 'NotFound', component: NotFound }
     ],
     mode: 'history'
 })

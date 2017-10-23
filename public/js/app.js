@@ -11641,7 +11641,7 @@ module.exports = Vue$3;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(49);
+module.exports = __webpack_require__(51);
 
 
 /***/ }),
@@ -42734,6 +42734,8 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_views_CategoryView___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_views_CategoryView__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_views_TopicView__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_views_TopicView___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_views_TopicView__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_NotFound__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_NotFound___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_NotFound__);
 
 
 
@@ -42742,10 +42744,11 @@ if (false) {
 
 
 
+
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
-	routes: [{ path: '/', name: 'Home', component: __WEBPACK_IMPORTED_MODULE_2__components_views_HomeView___default.a }, { path: '/category', name: 'Category', component: __WEBPACK_IMPORTED_MODULE_3__components_views_CategoryView___default.a }, { path: '/topic', name: 'Topci', component: __WEBPACK_IMPORTED_MODULE_4__components_views_TopicView___default.a }, { path: '*', component: NotFound }],
+	routes: [{ path: '/', name: 'Home', component: __WEBPACK_IMPORTED_MODULE_2__components_views_HomeView___default.a }, { path: '/category', name: 'Category', component: __WEBPACK_IMPORTED_MODULE_3__components_views_CategoryView___default.a }, { path: '/topic', name: 'Topic', component: __WEBPACK_IMPORTED_MODULE_4__components_views_TopicView___default.a }, { path: '*', name: 'NotFound', component: __WEBPACK_IMPORTED_MODULE_5__components_NotFound___default.a }],
 	mode: 'history'
 }));
 
@@ -45585,6 +45588,74 @@ if (false) {
 
 /***/ }),
 /* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(50)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/NotFound.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-34e147dd", Component.options)
+  } else {
+    hotAPI.reload("data-v-34e147dd", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_vm._v("\n\tOpp 404: Not found this page.\n")])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-34e147dd", module.exports)
+  }
+}
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
