@@ -10,7 +10,11 @@ require('./bootstrap');
 import Vue from 'vue'
 import App from './components/App'
 import router from './routes/index.js'
+import fromNow from './filters/timeFilter';
+import largeNumber from './filters/largeNumber';
 
+Vue.filter('fromNow', fromNow);
+Vue.filter('largeNumber', largeNumber);
 
 var vm = new Vue({
 	el: '#app',
