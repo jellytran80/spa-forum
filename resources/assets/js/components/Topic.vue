@@ -5,7 +5,7 @@
         </div>
         <div class="panel-body">
             <span>by {{ topic.user.name }}</span>
-            <span>{{ topic.time }}</span>
+            <span>{{ topic.time | fromNow }}</span>
         </div>
         <div class="panel-footer">
             <span>{{ topic.views | largeNumber }}</span>
