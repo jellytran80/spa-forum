@@ -8,7 +8,7 @@
             <span>{{ topic.time }}</span>
         </div>
         <div class="panel-footer">
-            <span>{{ topic.views }}</span>
+            <span>{{ topic.views | largeNumber }}</span>
             <small>Lượt xem</small>
         </div>
     </div>  
